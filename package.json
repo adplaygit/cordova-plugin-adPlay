@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-adplay",
-  "version": "2.1.0",
+  "version": "2.1.2",
   "description": "Show adPlay video and fullscreen ads",
   "cordova": {
     "id": "cordova-plugin-adPlay",
