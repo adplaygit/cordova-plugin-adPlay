@@ -44,8 +44,7 @@
 			<activity android:name="ir.adPlay.plugin.adPlayActivity"></activity>
 		</config-file>
 
-		<source-file src="src/android/adPlayCordovaInterface.jar" target-dir="libs" />
-		
+				
 		<source-file src="src/android/adPlayAndroidv2.0.jar" target-dir="libs" />
 <source-file src="src/android/AndroidStoreGooglePlay.jar" target-dir="libs" />
 <source-file src="src/android/bazaarIAB.jar" target-dir="libs" />

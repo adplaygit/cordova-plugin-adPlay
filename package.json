@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-adPlay",
-  "version": "1.0.41",
-  "description": "Show adplay video ad",
+  "version": "2.1",
+  "description": "Show adPlay video and fullscreen ads",
   "cordova": {
     "id": "cordova-plugin-adPlay",
     "platforms": [
@@ -28,34 +28,10 @@
       "version": ">=3.0.0"
     }
   ],
-  "author": {
-    "name": "adPlay"
-  },
-  "license": "MIT",
+  "author": "adPlay",
+  "license": "adPlay",
   "bugs": {
     "url": "https://github.com/adplaygit/cordova-plugin-adPlay/issues"
   },
-  "homepage": "https://github.com/adplaygit/cordova-plugin-adPlay#readme",
-  "gitHead": "31dfbd20f1745deddbd4692b8f3644a3de58e782",
-  "_id": "cordova-plugin-ad-adcolony@1.0.41",
-  "scripts": {},
-  "_shasum": "947b5b14db8758125a1722d362509e6aea469ac0",
-  "_from": "cordova-plugin-ad-adcolony@latest",
-  "_npmVersion": "1.4.28",
-  "_npmUser": {
-    "name": "cranberrygame",
-    "email": "cranberrygame@yahoo.com"
-  },
-  "maintainers": [
-    {
-      "name": "cranberrygame",
-      "email": "cranberrygame@yahoo.com"
-    }
-  ],
-  "dist": {
-    "shasum": "947b5b14db8758125a1722d362509e6aea469ac0",
-    "tarball": "http://registry.npmjs.org/cordova-plugin-ad-adcolony/-/cordova-plugin-ad-adcolony-1.0.41.tgz"
-  },
-  "directories": {},
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-ad-adcolony/-/cordova-plugin-ad-adcolony-1.0.41.tgz"
+  "homepage": "https://github.com/adplaygit/cordova-plugin-adPlay#readme"
 }
