@@ -35,11 +35,17 @@ module.exports = {
                     {
                         var arr = result.split(',');
                         if(arr[1]=="true"){
-                            self._availableReawardBase = true ;
-                            self.onAdAvailableRewardBase();
-                        }else if(arr[1]=="false"){
-                            self._availableUnReawardBase = true ;
-                            self.onAdAvailableUnRewardBase();
+                            if(!self._availableReawardBase){
+                                self._availableReawardBase = true ;
+                                self.onAdAvailableRewardBase();
+                            }
+                        }else if(arr[1]=="false")
+                        {
+                            if(!self._availableUnReawardBase)
+                            {
+                                self._availableUnReawardBase = true ;
+                                self.onAdAvailableUnRewardBase();
+                            }
                         } else {
                             self.__availableFullscreenBanner = true ;
                         }
