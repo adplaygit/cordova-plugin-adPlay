@@ -2,6 +2,7 @@ module.exports = {
 
     _availableReawardBase:false,
     _availableUnReawardBase:false,
+    __availableFullscreenBanner:false,
     //
 
     init: function(applicationId, developerId) {
@@ -19,6 +20,7 @@ module.exports = {
                         var arr = result.split(',');
                         self._availableReawardBase = false ;
                         self._availableUnReawardBase = false ;
+                        self.__availableFullscreenBanner = false ;
                         if(arr[1]=="true")
                             self.onAdCompleteRewardBase();
                         else
@@ -35,9 +37,11 @@ module.exports = {
                         if(arr[1]=="true"){
                             self._availableReawardBase = true ;
                             self.onAdAvailableRewardBase();
-                        }else{
+                        }else if(arr[1]=="false"){
                             self._availableUnReawardBase = true ;
                             self.onAdAvailableUnRewardBase();
+                        } else {
+                            self.__availableFullscreenBanner = true ;
                         }
 
 
@@ -47,6 +51,7 @@ module.exports = {
                     {
                         self._availableReawardBase = false ;
                         self._availableUnReawardBase = false ;
+                        self.__availableFullscreenBanner = false ;
                         if (self.onAdFail)
                             self.onAdFail();
                     }
@@ -56,8 +61,10 @@ module.exports = {
                         var arr = result.split(',');
                         if(arr[1]=="true"){
                             self._availableReawardBase = false ;
-                        }else{
+                        }else if(arr[1]=="false"){
                             self._availableUnReawardBase = false ;
+                        }else{
+                            self.__availableFullscreenBanner = false
                         }
 
                     }
@@ -117,6 +124,14 @@ module.exports = {
             'showAd',
             [false]
         );
+    }, showFullscreenBannerAd: function() {
+        cordova.exec(
+            null,
+            null,
+            'adPlayCordovaInterface',
+            'showFullscreenBannerAd',
+            []
+        );
     },
     dispose: function() {
         cordova.exec(
@@ -165,6 +180,15 @@ module.exports = {
             [false]
         );
         return this._availableUnReawardBase;
+    },checkFullscreenBannerAvailability: function() {
+        cordova.exec(
+            null,
+            null,
+            'adPlayCordovaInterface',
+            'checkFullscreenBannerAvailability',
+            []
+        );
+        return this.__availableFullscreenBanner;
     },
     initIAB: function(RSAKey,consumables,nonConsumables)
     {
