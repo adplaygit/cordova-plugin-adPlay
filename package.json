@@ -22,10 +22,13 @@
     "ecosystem:cordova",
     "cordova-android"
   ],
+,"devDependencies": {
+    "cordova": ">=5.4.1"
+  },
   "engines": [
     {
       "name": "cordova",
-      "version": ">=3.0.0"
+      "version": ">=5.4.1"
     }
   ],
   "author": "adPlay",
