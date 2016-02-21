@@ -22,7 +22,7 @@
     "ecosystem:cordova",
     "cordova-android"
   ],
-,"devDependencies": {
+"devDependencies": {
     "cordova": ">=5.4.1"
   },
   "engines": [
