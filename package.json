@@ -23,12 +23,12 @@
     "cordova-android"
   ],
 "devDependencies": {
-    "cordova": ">=5.4.1"
+    "cordova": ">=3.0.0"
   },
   "engines": [
     {
       "name": "cordova",
-      "version": ">=5.4.1"
+      "version": ">=3.0.0"
     }
   ],
   "author": "adPlay",
